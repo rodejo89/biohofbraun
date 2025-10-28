@@ -1,0 +1,49 @@
+/*
+Theme Name: Biohof Braun
+Theme URI: 
+Author: 
+Author URI: 
+Description: Biohof Braun 2025
+Requires at least: 6.8
+Tested up to: 6.8
+Requires PHP: 5.7
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: biohof-braun
+Tags: 
+*/
+
+.wp-block-site-logo {
+    transform: translate(0px, -12%);
+}
+
+.img--transform--104 {
+  transform:translate(0%, 104px);
+}
+
+input {
+    padding:8px 24px !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+    max-width:360px;
+    width:100%;
+    height:fit-content;
+    right:0px;
+    top:37px;
+    left:auto;
+    padding: 48px;
+}
+
+
+.scrolled .wp-block-navigation__responsive-container.is-menu-open {
+    top:0px;
+}
+
+.custom-logo-link img {
+    transition:0.3s ease-in-out;
+}
+
+.scrolled .custom-logo-link {
+}
