@@ -14,6 +14,10 @@ Text Domain: biohof-braun
 Tags: 
 */
 
+main {
+    overflow:hidden;
+}
+
 .wp-block-site-logo {
     transform: translate(0px, -12%);
 }
@@ -46,4 +50,211 @@ input {
 }
 
 .scrolled .custom-logo-link {
+}
+
+:root {
+    --transition--fast: all 0.2s ease-in-out;
+    --transition: all 0.3s ease-in-out;
+    --transition--slow: all 0.5s ease-in-out;
+}
+
+body,
+.fixed__header,
+.wp-block-site-logo a {
+    transition: var(--transition);
+}
+
+body {
+    transition: var(--transition);
+    padding-top:236px !important;
+}
+
+.fixed__header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fffffff3;
+    overflow: visible;
+}
+
+.scrolled .fixed__header {
+    top:-37px;
+}
+
+/*
+.scrolled header .wp-block-columns {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+    */
+
+.admin-bar header .fixed__header {
+    top: 32px;
+}
+
+.scrolled header .fixed__header {
+    min-height: 80px !important;
+}
+
+.wp-block-site-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.wp-block-site-logo a {
+    width: 228px;
+}
+
+/*
+.scrolled .wp-block-site-logo a {
+    width: 144px;
+}
+    */
+
+.wp-block-site-logo img {
+    height: auto !important;
+    width: 100% !important;
+
+}
+
+.scrolled .wp-block-site-logo img {
+    width: 40px;
+}
+
+body.scrolled {
+    padding-top: 80px;
+}
+
+.margin__negative--top-400 {
+    margin-top: -400px;
+}
+
+.wp-block-button__link::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0px;
+    background-image: url(assets/img/chevron_right.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    top: -1px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.has-primary-color::before {
+    background-image: url(assets/img/chevron_right_green.svg);
+}
+
+.chevron--no .wp-block-button__link::before {
+    display:none
+}
+
+
+.wp-block-buttons .wp-block-button__link {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overflow--visible .wp-block-splide-carousel__track {
+    overflow: visible !important;
+}
+
+.timeline__item {
+    width: 16px;
+    height: 16px;
+    background-color: #02551e;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: -49px;
+    transform: translate(50%, 0px);
+}
+
+.timeline__item--large {
+    width: 20px;
+    height: 20px;
+}
+
+.timeline__container--right .timeline__item {
+    left: -49px;
+    right: auto;
+    transform: translate(-50%, 0px);
+}
+
+.fit__content {
+    width: fit-content;
+}
+
+.img--absolute {
+    position: absolute;
+}
+
+.wp-block-columns {
+    position:relative
+}
+
+.object--top img {
+    object-position: top;
+}
+
+.img--first {
+    z-index: 2;
+}
+
+.img--second {
+    z-index: 1;
+}
+
+.gallery--a .img--second img {
+    transform: translate(calc(-48px - 163px), 100%);
+}
+
+.skip-link.screen-reader-text {
+    display: none !important;
+}
+
+/* OEKOBOX STYLING */
+
+#oo-navi .oo-navi-item {
+        font-weight: 400 !important;
+        text-transform: none !important;
+}
+
+#oo-search #oo-search-input, .oo1-btn-status, .oo-shop-favorites-btn {
+    font-family: var(--wp--preset--font-family--josefin-sans);
+}
+
+#oo-search #oo-search-input {
+    width:360px;
+    font-family: var(--wp--preset--font-family--josefin-sans);
+}
+
+#oo-navi .oo-navi-pane {
+        flex-flow: row nowrap !important
+}
+
+.oo1-btn-status-wrapper {
+    margin-right:-48px;
+}
+
+#std1HeaderMainNaviWrapper nav li:last-of-type {
+    margin-right:96px
+}
+
+#std1HeaderMainNaviWrapper::after {
+    content:'';
+    height:100%;
+    width:96px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    background:linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}   
+
+.oo-shop-data-type-SubGroup {
+    display:none !important;
 }
